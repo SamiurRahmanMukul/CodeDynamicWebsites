@@ -39,7 +39,7 @@
 	</div><!-- wrapper -->
 
 	<div class="copyright-info">
-		<?php include '../assets/includes/copyright.php';?>
+		<?php include './../../assets/includes/copyright.php';?>
 	</div><!-- copyright-info -->
 </body>
 </html>

@@ -46,16 +46,16 @@ $gentlemen = array(
 <html>
 	<head>
 		<title>Get Your Hands Dirty: <?php echo TITLE; ?></title>
-		<link href="/assets/styles.css" rel="stylesheet">
-		<script type="text/javascript" src="/assets/syntaxhighlighter/scripts/shCore.js"></script>
-		<script type="text/javascript" src="/assets/syntaxhighlighter/scripts/shBrushPhp.js"></script>
-		<link type="text/css" rel="stylesheet" href="/assets/syntaxhighlighter/styles/shCoreDefault.css"/>
+		<link href="./../assets/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="./../assets/syntaxhighlighter/scripts/shCore.js"></script>
+		<script type="text/javascript" src="./../assets/syntaxhighlighter/scripts/shBrushPhp.js"></script>
+		<link type="text/css" rel="stylesheet" href="./../assets/syntaxhighlighter/styles/shCoreDefault.css"/>
 		<script type="text/javascript">SyntaxHighlighter.all();</script>
 	</head>
 	<body>
 		<div class="wrapper">
 			<a href="/" title="Back to directory" id="logo">
-				<img src="/assets/img/logo.png" alt="PHP">
+				<img src="./../assets/img/logo.png" alt="PHP">
 			</a>
 
 			<h1>Get Your Hands Dirty: <small><?php echo TITLE; ?></small></h1>
@@ -67,13 +67,13 @@ $gentlemen = array(
 			<div class="sandbox">
 
 				<h3><?php echo $gentlemen[0]["first_name"]; ?> from <?php echo $gentlemen[0]["country"]; ?></h3>
-				<p><strong><?php echo $gentlemen[0]["first_name"]; ?></strong> is quite the <strong><?php echo $age_group[2]; ?></strong>! He sports a solid <strong><?php echo $handlebar[name]; ?></strong> Moustache that is <strong><?php echo $handlebar[colour]; ?></strong> in colour.</p>
-
+				<p><strong><?php echo $gentlemen[0]["first_name"]; ?></strong> is quite the <strong><?php echo $age_group[2]; ?></strong>! He sports a solid <strong><?php echo $handlebar["name"]; ?></strong> Moustache that is <strong><?php echo $handlebar["colour"]; ?></strong> in colour.</"p>
+"
 				<h3><?php echo $gentlemen[1]["first_name"]; ?> from <?php echo $gentlemen[1]["country"]; ?></h3>
-				<p><strong><?php echo $gentlemen[1]["first_name"]; ?></strong> is a rather dapper <strong><?php echo $age_group[1]; ?></strong>! He proudly wears a <strong><?php echo $fu_manchu[name]; ?></strong> that is coloured a gentle <strong><?php echo $fu_manchu[colour]; ?></strong>.</p>
+				<p><strong><?php echo $gentlemen[1]["first_name"]; ?></strong> is a rather dapper <strong><?php echo $age_group[1]; ?></strong>! He proudly wears a <strong><?php echo $fu_manchu["name"]; ?></strong> that is coloured a gentle <strong><?php echo $fu_manchu["colour"]; ?></strong>.</p>
 
 				<h3><?php echo $gentlemen[2]["first_name"]; ?> from <?php echo $gentlemen[2]["country"]; ?></h3>
-				<p><strong><?php echo $gentlemen[2]["first_name"]; ?></strong> might seem too young for a 'stache because he is a <strong><?php echo $age_group[0]; ?></strong>. But he proudly displays his <strong><?php echo $salvador_dali[name]; ?></strong> at school! Although, it's a little hard to see because it's light <strong><?php echo $salvador_dali[colour]; ?></strong>.</p>
+				<p><strong><?php echo $gentlemen[2]["first_name"]; ?></strong> might seem too young for a 'stache because he is a <strong><?php echo $age_group[0]; ?></strong>. But he proudly displays his <strong><?php echo $salvador_dali["name"]; ?></strong> at school! Although, it's a little hard to see because it's light <strong><?php echo $salvador_dali["colour"]; ?></strong>.</p>
 
 			</div><!-- end sandbox -->
 
@@ -90,7 +90,7 @@ $gentlemen = array(
 		</div><!-- end wrapper -->
 
 		<div class="copyright-info">
-			<?php include '../assets/includes/copyright.php';?>
+			<?php include './../assets/includes/copyright.php';?>
 		</div><!-- end copyright-info -->
 	</body>
 </html>

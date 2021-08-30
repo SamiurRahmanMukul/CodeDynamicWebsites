@@ -19,12 +19,12 @@ $handlebar = array(
 <html>
 	<head>
 		<title>PHP <?php echo TITLE; ?></title>
-		<link href="/assets/styles.css" rel="stylesheet">
+		<link href="./../assets/styles.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="wrapper">
 			<a href="/" title="Back to directory" id="logo">
-				<img src="/assets/img/logo.png" alt="PHP">
+				<img src="./../assets/img/logo.png" alt="PHP">
 			</a>
 
 			<h1>Tutorial <? echo $lesson_num; ?>: <small><?php echo TITLE; ?></small></h1>
@@ -46,7 +46,7 @@ $handlebar = array(
 		</div><!-- end wrapper -->
 
 		<div class="copyright-info">
-			<?php include '../assets/includes/copyright.php';?>
+			<?php include './../assets/includes/copyright.php';?>
 		</div><!-- end copyright-info -->
 	</body>
 </html>

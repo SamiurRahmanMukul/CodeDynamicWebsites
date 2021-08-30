@@ -2,6 +2,7 @@
 define("TITLE", "Arrays");
 $my_name = "Brad Hussey";
 $lesson_num = 6;
+$ref = "";
 
 if (isset($_GET['ref'])) {
     $ref = $_GET['ref'];

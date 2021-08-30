@@ -36,16 +36,16 @@ $moustaches = array(
 <html>
 	<head>
 		<title>PHP <?php echo TITLE; ?></title>
-		<link href="/assets/styles.css" rel="stylesheet">
-		<script type="text/javascript" src="/assets/syntaxhighlighter/scripts/shCore.js"></script>
-		<script type="text/javascript" src="/assets/syntaxhighlighter/scripts/shBrushPhp.js"></script>
-		<link type="text/css" rel="stylesheet" href="/assets/syntaxhighlighter/styles/shCoreDefault.css"/>
+		<link href="./../assets/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="./../assets/syntaxhighlighter/scripts/shCore.js"></script>
+		<script type="text/javascript" src="./../assets/syntaxhighlighter/scripts/shBrushPhp.js"></script>
+		<link type="text/css" rel="stylesheet" href="./../assets/syntaxhighlighter/styles/shCoreDefault.css"/>
 		<script type="text/javascript">SyntaxHighlighter.all();</script>
 	</head>
 	<body>
 		<div class="wrapper">
 			<a href="/" title="Back to directory" id="logo">
-				<img src="/assets/img/logo.png" alt="PHP">
+				<img src="./../assets/img/logo.png" alt="PHP">
 			</a>
 
 			<h1>Tutorial <?php echo $lesson_num; ?>: <small><?php echo TITLE; ?></small></h1>
@@ -109,7 +109,7 @@ $moustaches = array (
 		</div><!-- end wrapper -->
 
 		<div class="copyright-info">
-			<?php include '../assets/includes/copyright.php';?>
+			<?php include './../assets/includes/copyright.php';?>
 		</div><!-- end copyright-info -->
 	</body>
 </html>
